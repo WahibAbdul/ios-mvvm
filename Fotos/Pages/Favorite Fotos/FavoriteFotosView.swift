@@ -18,24 +18,27 @@ struct FavoriteFotosView: View {
                     Text("No Favorites")
                 } else {
                     ScrollView{
-                        LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), content: {
+                        // Using LazyVStack to load items when displayed for better performance.
+                        LazyVStack(spacing: 12, content: {
                             ForEach(viewModel.favorites) { foto in
-                                KFImage(
-                                    URL(string: foto.thumbnailUrl))
-                                .resizable()
-                                .scaledToFit()
+                                NavigationLink {
+                                    FotoViewer(foto: foto)
+                                } label: {
+                                    FotoListItemView(foto: foto, isFavorite: true) {
+                                        withAnimation {
+                                            viewModel.toggleFavorite(foto: foto)
+                                        }
+                                    }
+                                }
+
                             }
                         })
-                        .padding(.horizontal, 12)
                     }
+                    .padding(12)
                 }
             }
             .navigationTitle("Favorites")
             .navigationBarTitleDisplayMode(.large)
         }
     }
-}
-
-#Preview {
-    FavoriteFotosView()
 }

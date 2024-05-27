@@ -18,12 +18,14 @@ struct HomeView: View {
                     ProgressView("Loading")
                 }else {
                     ScrollView {
-                        LazyVGrid(columns: [GridItem(.flexible())], content: {
+                        // Using LazyVGrid to load items when displayed for better performance.
+                        LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), content: {
                             ForEach(viewModel.fotos) { foto in
                                 NavigationLink(destination: FotoViewer(foto: foto)) {
-                                    KFImage(URL(string: foto.url))
+                                    KFImage(URL(string: foto.thumbnailUrl))
                                         .resizable()
                                         .scaledToFill()
+                                        .clipShape(RoundedRectangle(cornerRadius: 12))
                                 }
                             }
                             

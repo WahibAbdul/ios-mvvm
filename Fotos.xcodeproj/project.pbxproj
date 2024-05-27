@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E2DD66C2C048B3400DC2389 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1E2DD66B2C048B3400DC2389 /* Kingfisher */; };
 		1E2DD6712C04D37200DC2389 /* FotoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DD6702C04D37200DC2389 /* FotoListItemView.swift */; };
+		1E2DD6732C04E43000DC2389 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DD6722C04E43000DC2389 /* BaseViewModel.swift */; };
 		1E2E1C522C02298F00625F4D /* FotosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2E1C512C02298F00625F4D /* FotosApp.swift */; };
 		1E2E1C542C02298F00625F4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2E1C532C02298F00625F4D /* ContentView.swift */; };
 		1E2E1C562C02299000625F4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2E1C552C02299000625F4D /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		1E2DD6702C04D37200DC2389 /* FotoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoListItemView.swift; sourceTree = "<group>"; };
+		1E2DD6722C04E43000DC2389 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		1E2E1C4E2C02298F00625F4D /* Fotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E2E1C512C02298F00625F4D /* FotosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotosApp.swift; sourceTree = "<group>"; };
 		1E2E1C532C02298F00625F4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				1E2E1C6E2C022C9D00625F4D /* FotoViewModel.swift */,
+				1E2DD6722C04E43000DC2389 /* BaseViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E2E1C7A2C022EA300625F4D /* FavoriteFotosView.swift in Sources */,
+				1E2DD6732C04E43000DC2389 /* BaseViewModel.swift in Sources */,
 				1E2DD6712C04D37200DC2389 /* FotoListItemView.swift in Sources */,
 				1E2E1C6F2C022C9D00625F4D /* FotoViewModel.swift in Sources */,
 				1E2E1C7D2C02301400625F4D /* FotoApiService.swift in Sources */,

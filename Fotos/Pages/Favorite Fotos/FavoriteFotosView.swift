@@ -25,7 +25,7 @@ struct FavoriteFotosView: View {
                                     FotoViewer(foto: foto)
                                 } label: {
                                     FotoListItemView(foto: foto, isFavorite: true) {
-                                        withAnimation {
+                                        withAnimation {                                            
                                             viewModel.toggleFavorite(foto: foto)
                                         }
                                     }

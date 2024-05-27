@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-class FotoViewModel: ObservableObject {
+class FotoViewModel: BaseViewModel {
     @Published var fotos: [Foto] = []
     @Published var favorites: [Foto] = []
     
@@ -18,14 +18,15 @@ class FotoViewModel: ObservableObject {
         self.repository = repository
     }
     
-    func fetchFotos() async {        
+    func fetchFotos() async {
+        if !fotos.isEmpty { return }
+        defer { toggleLoading(value: false) }
         do {
+            toggleLoading(value: true)
             let data = try await repository.fetchFotos()
-            DispatchQueue.main.async {
-                self.fotos = data
-            }
+            DispatchQueue.main.async { self.fotos = data }
         }catch {
-            print(error.localizedDescription)
+            setErrorMessage(message: "Unable to load data!")
         }
     }
     
@@ -38,7 +39,7 @@ class FotoViewModel: ObservableObject {
     func toggleFavorite(foto: Foto) {
         return isFavorte(foto: foto) ? removeFromFavorites(foto: foto) : addToFavorites(foto: foto)
     }
-
+    
     func addToFavorites(foto: Foto) {
         favorites.append(foto)
     }

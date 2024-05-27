@@ -29,7 +29,7 @@
 		1E2E1C532C02298F00625F4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E2E1C552C02299000625F4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E2E1C582C02299000625F4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1E2E1C612C022B7E00625F4D /* Foto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foto.swift; sourceTree = SOURCE_ROOT; };
+		1E2E1C612C022B7E00625F4D /* Foto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Foto.swift; path = Fotos/Data/Models/Foto.swift; sourceTree = SOURCE_ROOT; };
 		1E2E1C642C022BB800625F4D /* FotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoRepository.swift; sourceTree = "<group>"; };
 		1E2E1C6E2C022C9D00625F4D /* FotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoViewModel.swift; sourceTree = "<group>"; };
 		1E2E1C752C022E6000625F4D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };

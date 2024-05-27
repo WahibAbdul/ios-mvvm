@@ -1,4 +1,4 @@
-# Recruiting Task Mobile
+# iOS SwiftUI + MVVM
 
 ## Overview
 This project is a mobile application developed using Swift and SwiftUI to demostrate MVVM architecture, consisting of two tabs: **Gallery** and **Favourites**. It utilizes the Kingfisher library to load and cache images, improving performance and user experience. The app fetches photos from the JSONPlaceholder API and allows users to mark images as favourites for easy access.

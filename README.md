@@ -3,6 +3,12 @@
 ## Overview
 This project is a mobile application developed using Swift and SwiftUI to demostrate MVVM architecture, consisting of two tabs: **Gallery** and **Favourites**. It utilizes the Kingfisher library to load and cache images, improving performance and user experience. The app fetches photos from the JSONPlaceholder API and allows users to mark images as favourites for easy access.
 
+## Screenshots
+<p>
+<img src="https://github.com/WahibAbdul/ios-mvvm/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-05-27%20at%2017.48.13.png" alt="Screenshot 1" width="230" height="500">
+   <img src="https://github.com/WahibAbdul/ios-mvvm/blob/main/Screenshots/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-05-27%20at%2017.48.16.png" alt="Screenshot 1" width="230" height="500">
+</p>
+
 ## Features
 
 ### Gallery Tab
@@ -33,7 +39,7 @@ Kingfisher is a powerful and easy-to-use library for downloading and caching ima
 ### Steps to Run the Project
 1. **Clone the repository**:
    ```bash
-   git clone [<repository_url>](https://github.com/WahibAbdul/ios-mvvm.git)
+   git clone https://github.com/WahibAbdul/ios-mvvm.git
    ```
 2. **Navigate to the project directory**:
    ```bash

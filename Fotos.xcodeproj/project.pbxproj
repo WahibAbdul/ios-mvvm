@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E2DD66C2C048B3400DC2389 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1E2DD66B2C048B3400DC2389 /* Kingfisher */; };
 		1E2E1C522C02298F00625F4D /* FotosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2E1C512C02298F00625F4D /* FotosApp.swift */; };
 		1E2E1C542C02298F00625F4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2E1C532C02298F00625F4D /* ContentView.swift */; };
 		1E2E1C562C02299000625F4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2E1C552C02299000625F4D /* Assets.xcassets */; };
 		1E2E1C592C02299000625F4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2E1C582C02299000625F4D /* Preview Assets.xcassets */; };
+		1E2E1C622C022B7E00625F4D /* Foto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2E1C612C022B7E00625F4D /* Foto.swift */; };
+		1E2E1C652C022BB800625F4D /* FotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2E1C642C022BB800625F4D /* FotoRepository.swift */; };
+		1E2E1C6F2C022C9D00625F4D /* FotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2E1C6E2C022C9D00625F4D /* FotoViewModel.swift */; };
+		1E2E1C762C022E6000625F4D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2E1C752C022E6000625F4D /* HomeView.swift */; };
+		1E2E1C7A2C022EA300625F4D /* FavoriteFotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2E1C792C022EA300625F4D /* FavoriteFotosView.swift */; };
+		1E2E1C7D2C02301400625F4D /* FotoApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2E1C7C2C02301400625F4D /* FotoApiService.swift */; };
+		1E2E1C812C023B0700625F4D /* FotoViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2E1C802C023B0700625F4D /* FotoViewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		1E2E1C532C02298F00625F4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E2E1C552C02299000625F4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E2E1C582C02299000625F4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E2E1C612C022B7E00625F4D /* Foto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foto.swift; sourceTree = SOURCE_ROOT; };
+		1E2E1C642C022BB800625F4D /* FotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoRepository.swift; sourceTree = "<group>"; };
+		1E2E1C6E2C022C9D00625F4D /* FotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoViewModel.swift; sourceTree = "<group>"; };
+		1E2E1C752C022E6000625F4D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1E2E1C792C022EA300625F4D /* FavoriteFotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFotosView.swift; sourceTree = "<group>"; };
+		1E2E1C7C2C02301400625F4D /* FotoApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoApiService.swift; sourceTree = "<group>"; };
+		1E2E1C802C023B0700625F4D /* FotoViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoViewer.swift; sourceTree = "<group>"; };
+		1E2E1C822C02442200625F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +42,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2DD66C2C048B3400DC2389 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E2DD66E2C04CBC600DC2389 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E2E1C6E2C022C9D00625F4D /* FotoViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		1E2E1C452C02298F00625F4D = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +76,11 @@
 		1E2E1C502C02298F00625F4D /* Fotos */ = {
 			isa = PBXGroup;
 			children = (
-				1E2E1C512C02298F00625F4D /* FotosApp.swift */,
-				1E2E1C532C02298F00625F4D /* ContentView.swift */,
+				1E2E1C822C02442200625F4D /* Info.plist */,
+				1E2E1C662C022C3D00625F4D /* Pages */,
+				1E2DD66E2C04CBC600DC2389 /* View Models */,
+				1E2E1C5F2C022AB500625F4D /* Data */,
+				1E2E1C712C022DC500625F4D /* App */,
 				1E2E1C552C02299000625F4D /* Assets.xcassets */,
 				1E2E1C572C02299000625F4D /* Preview Content */,
 			);
@@ -65,6 +93,83 @@
 				1E2E1C582C02299000625F4D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E2E1C5F2C022AB500625F4D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1E2E1C7B2C022FF600625F4D /* Services */,
+				1E2E1C632C022BA800625F4D /* Repositories */,
+				1E2E1C602C022B3400625F4D /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1E2E1C602C022B3400625F4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E2E1C612C022B7E00625F4D /* Foto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1E2E1C632C022BA800625F4D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				1E2E1C642C022BB800625F4D /* FotoRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		1E2E1C662C022C3D00625F4D /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				1E2E1C7E2C023ACF00625F4D /* Foto Viewer */,
+				1E2E1C772C022E6F00625F4D /* Favorite Fotos */,
+				1E2E1C672C022C4800625F4D /* Home */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		1E2E1C672C022C4800625F4D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1E2E1C752C022E6000625F4D /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1E2E1C712C022DC500625F4D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1E2E1C532C02298F00625F4D /* ContentView.swift */,
+				1E2E1C512C02298F00625F4D /* FotosApp.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		1E2E1C772C022E6F00625F4D /* Favorite Fotos */ = {
+			isa = PBXGroup;
+			children = (
+				1E2E1C792C022EA300625F4D /* FavoriteFotosView.swift */,
+			);
+			path = "Favorite Fotos";
+			sourceTree = "<group>";
+		};
+		1E2E1C7B2C022FF600625F4D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1E2E1C7C2C02301400625F4D /* FotoApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1E2E1C7E2C023ACF00625F4D /* Foto Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				1E2E1C802C023B0700625F4D /* FotoViewer.swift */,
+			);
+			path = "Foto Viewer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +188,9 @@
 			dependencies = (
 			);
 			name = Fotos;
+			packageProductDependencies = (
+				1E2DD66B2C048B3400DC2389 /* Kingfisher */,
+			);
 			productName = Fotos;
 			productReference = 1E2E1C4E2C02298F00625F4D /* Fotos.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +219,9 @@
 				Base,
 			);
 			mainGroup = 1E2E1C452C02298F00625F4D;
+			packageReferences = (
+				1E2DD66A2C048B3400DC2389 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 1E2E1C4F2C02298F00625F4D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +248,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2E1C7A2C022EA300625F4D /* FavoriteFotosView.swift in Sources */,
+				1E2E1C6F2C022C9D00625F4D /* FotoViewModel.swift in Sources */,
+				1E2E1C7D2C02301400625F4D /* FotoApiService.swift in Sources */,
+				1E2E1C762C022E6000625F4D /* HomeView.swift in Sources */,
 				1E2E1C542C02298F00625F4D /* ContentView.swift in Sources */,
 				1E2E1C522C02298F00625F4D /* FotosApp.swift in Sources */,
+				1E2E1C622C022B7E00625F4D /* Foto.swift in Sources */,
+				1E2E1C652C022BB800625F4D /* FotoRepository.swift in Sources */,
+				1E2E1C812C023B0700625F4D /* FotoViewer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +393,7 @@
 				DEVELOPMENT_TEAM = GC49ZHGF54;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fotos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +423,7 @@
 				DEVELOPMENT_TEAM = GC49ZHGF54;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fotos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +464,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E2DD66A2C048B3400DC2389 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E2DD66B2C048B3400DC2389 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E2DD66A2C048B3400DC2389 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E2E1C462C02298F00625F4D /* Project object */;
 }
